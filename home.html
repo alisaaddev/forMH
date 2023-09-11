@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="home.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alictro-Home</title>
+    <link rel="icon" type="image/png" href="alictro-logo.png">
+</head>
+<body>
+    <nav id="nav">
+        <div class="all">
+    <div class="left">
+        <a href="home.html" class="home">Home</a>
+    </div>
+    <div class="right">
+      <a id="toggleLink" href="#" onclick="toggleTheme()">Dark</a>
+        <a href="" class="comm" id="uouo">English</a>
+        <a href="" class="sign" id="ipip">Signup</a>
+        <a href="" class="log" id="yiyi">Login</a>
+    </div>
+        </div>
+    </nav>
+    <div class="inpot">
+        <input type="text" class="searchbarinput" placeholder="search ...." id="searchbarinput">
+    </div>
+    <div class="allbtncon">
+    <div class="btncon">
+        <a href="bullying.html"><button class="button-5" role="button" data-name="التنمر">التنمر</button></a>
+       
+    </div>
+    <div class="btncon">
+        <button class="button-5" role="button" data-name="subject">ما عدنا مواضيع</button>
+        
+    </div>
+    <div class="btncon">
+        <button class="button-5" role="button" data-name="subject">ما عدنا مواضيع</button>
+        
+    </div>
+    <div class="btncon">
+        <button class="button-5" role="button" data-name="subject">ما عدنا مواضيع </button>
+       
+    </div>
+
+</div>
+<style>
+  #toggleLink {
+  
+  padding: 10px;
+  text-decoration: none;
+}
+.btncon {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+
+}
+.button-5 {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #415762;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+  padding: 40px;
+  width: 150px;
+ 
+}
+
+.button-5:hover
+{
+  background-color: #617784;
+  
+}
+
+
+
+.button-5:active {
+  background-color: #c85000;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+</style>
+<script>
+  function toggleTheme() {
+  var link = document.getElementById("toggleLink");
+  var body = document.getElementsByTagName("body")[0];
+  var nav = document.getElementById("nav");
+  var a = document.getElementsByTagName("a")[0];
+  var yiyi = document.getElementById("yiyi");
+  var uouo = document.getElementById("uouo");
+  var ipip = document.getElementById("ipip");
+  var buttons = document.getElementsByClassName("button-5");
+  
+
+  if (link.innerHTML === "Light") { /* Onclick the Light button */
+    link.innerHTML = "Dark";
+    body.style.backgroundColor = "#ffffff";
+    nav.style.backgroundColor = "#343434";
+    a.style.color = "#ffffff";
+    link.style.color = "#ffffff";
+    yiyi.style.color = "#ffffff";
+    uouo.style.color = "#ffffff";
+    ipip.style.color = "#ffffff";
+  }
+  
+  else { /* Onclick the Dark button */
+    link.innerHTML = "Light";
+    body.style.backgroundColor = "#000000";
+    nav.style.backgroundColor = "#cccccc";
+    a.style.color = "#000000";
+    link.style.color = "#000000";
+    yiyi.style.color = "#000000";
+    uouo.style.color = "#000000";
+    ipip.style.color = "#000000";
+    buttons.style.backgroundColor = "#292929";
+  }
+}
+    const searchbarinput = document.getElementById('searchbarinput');
+const buttons = document.getElementsByClassName('button-5');
+
+searchbarinput.addEventListener('input', function() {
+  const searchText = searchbarinput.value.toLowerCase();
+
+  for (let i = 0; i < buttons.length; i++) {
+    const button = buttons[i];
+    const buttonName = button.getAttribute('data-name').toLowerCase();
+
+    if (buttonName.includes(searchText)) {
+      button.style.display = 'block';
+    } else {
+      button.style.display = 'none';
+    }
+  }
+});
+</script>
+
+ 
+  
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

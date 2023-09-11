@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Kanit:wght@500&family=Rubik&family=Ubuntu:wght@500&display=swap');
+
+body {
+  font-family: 'Courgette', cursive;
+  font-family: 'Kanit', sans-serif;
+  margin: 0; 
+  padding: 0; 
+}
+
+.left {
+  font-family: 'Courgette', cursive;
+  font-family: 'Kanit', sans-serif;
+}
+
+.right {
+    font-family: 'Courgette', cursive;
+  font-family: 'Kanit', sans-serif;
+  
+}
+
+
+.all {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px; 
+}
+
+.left {
+  align-self: flex-start; 
+}
+
+.right {
+  align-self: flex-end; 
+}
+.home , .search , .comm , .log , .sign {
+    text-decoration: none;
+    
+}
+.search , .comm , .log , .sign{
+    padding:4px;
+}
+nav {
+   background-color:#cccccc ;
+}
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+ size: 20px;
+}
+.searchbarinput {
+  padding: 10px;
+  width: 95%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.searchbarinput::placeholder {
+  color: #999;
+}
+
+.searchbarinput:focus {
+  border-color: blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
